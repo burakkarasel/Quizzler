@@ -23,13 +23,13 @@
                                 <rect key="frame" x="0.0" y="59" width="393" height="759"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Question" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HvH-uh-l14">
-                                        <rect key="frame" x="30" y="0.0" width="333" height="609"/>
+                                        <rect key="frame" x="30" y="0.0" width="333" height="544"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                         <color key="textColor" red="0.35686274509803922" green="0.60392156862745094" blue="0.54509803921568623" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i50-VL-sVj">
-                                        <rect key="frame" x="30" y="616.66666666666663" width="333" height="50"/>
+                                        <rect key="frame" x="30" y="551.66666666666663" width="333" height="50"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="50" id="Pt2-Kd-XtB"/>
                                         </constraints>
@@ -46,20 +46,37 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qba-Yi-wdh">
-                                        <rect key="frame" x="30" y="624" width="333" height="50"/>
+                                        <rect key="frame" x="30" y="559" width="333" height="50"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="50" id="vKz-5z-Fmb"/>
                                         </constraints>
                                         <color key="tintColor" red="0.35686274509803922" green="0.60392156862745094" blue="0.54509803921568623" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" title="True">
+                                        <buttonConfiguration key="configuration" style="plain" title="First Button" titleAlignment="center">
                                             <backgroundConfiguration key="background" cornerRadius="16" strokeWidth="4">
                                                 <color key="strokeColor" red="0.26666666666666666" green="0.31372549019607843" blue="0.41176470588235292" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             </backgroundConfiguration>
                                             <fontDescription key="titleFontDescription" type="boldSystem" pointSize="20"/>
                                         </buttonConfiguration>
                                         <connections>
-                                            <action selector="answerButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vvv-iB-Izv"/>
+                                            <action selector="answerButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="iD3-zb-93X"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fFR-Bz-GA4">
+                                        <rect key="frame" x="30" y="624" width="333" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="BOJ-7Z-6Tk"/>
+                                        </constraints>
+                                        <color key="tintColor" red="0.35686274509999999" green="0.60392156860000001" blue="0.5450980392" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Second Button" titleAlignment="center">
+                                            <backgroundConfiguration key="background" cornerRadius="16" strokeWidth="4">
+                                                <color key="strokeColor" red="0.2666666667" green="0.31372549020000001" blue="0.41176470590000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </backgroundConfiguration>
+                                            <fontDescription key="titleFontDescription" type="boldSystem" pointSize="20"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="answerButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="GIU-Ab-2I5"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E4u-aP-pYe">
@@ -69,14 +86,14 @@
                                         </constraints>
                                         <color key="tintColor" red="0.35686274509803922" green="0.60392156862745094" blue="0.54509803921568623" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" title="False">
+                                        <buttonConfiguration key="configuration" style="plain" title="Third Button" titleAlignment="center">
                                             <backgroundConfiguration key="background" cornerRadius="16" strokeWidth="4">
                                                 <color key="strokeColor" red="0.26666666666666666" green="0.31372549019607843" blue="0.41176470588235292" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             </backgroundConfiguration>
                                             <fontDescription key="titleFontDescription" type="boldSystem" pointSize="20"/>
                                         </buttonConfiguration>
                                         <connections>
-                                            <action selector="answerButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zGJ-PH-I4W"/>
+                                            <action selector="answerButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="nei-KA-ydz"/>
                                         </connections>
                                     </button>
                                     <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progressViewStyle="bar" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="s4v-C1-9do">
@@ -89,10 +106,13 @@
                                     </progressView>
                                 </subviews>
                                 <constraints>
+                                    <constraint firstItem="fFR-Bz-GA4" firstAttribute="top" secondItem="Qba-Yi-wdh" secondAttribute="bottom" constant="15" id="0oA-H2-6GD"/>
                                     <constraint firstItem="HvH-uh-l14" firstAttribute="top" secondItem="zQ3-p4-119" secondAttribute="top" id="34z-Q1-eoc"/>
                                     <constraint firstItem="HvH-uh-l14" firstAttribute="leading" secondItem="zQ3-p4-119" secondAttribute="leading" constant="30" id="8io-Po-ILk"/>
                                     <constraint firstItem="Qba-Yi-wdh" firstAttribute="leading" secondItem="zQ3-p4-119" secondAttribute="leading" constant="30" id="DvC-aj-Hgg"/>
+                                    <constraint firstItem="E4u-aP-pYe" firstAttribute="top" secondItem="fFR-Bz-GA4" secondAttribute="bottom" constant="15" id="Flv-iT-Pbb"/>
                                     <constraint firstAttribute="trailing" secondItem="HvH-uh-l14" secondAttribute="trailing" constant="30" id="InS-yo-cbr"/>
+                                    <constraint firstAttribute="trailing" secondItem="fFR-Bz-GA4" secondAttribute="trailing" constant="30" id="NWN-Ie-UPM"/>
                                     <constraint firstItem="Qba-Yi-wdh" firstAttribute="centerX" secondItem="zQ3-p4-119" secondAttribute="centerX" id="P0z-UY-iHr"/>
                                     <constraint firstAttribute="trailing" secondItem="Qba-Yi-wdh" secondAttribute="trailing" constant="30" id="RGv-8B-KST"/>
                                     <constraint firstItem="E4u-aP-pYe" firstAttribute="centerX" secondItem="zQ3-p4-119" secondAttribute="centerX" id="Rc7-Cs-iA2"/>
@@ -104,6 +124,8 @@
                                     <constraint firstAttribute="trailing" secondItem="i50-VL-sVj" secondAttribute="trailing" constant="30" id="g3S-Qu-IWn"/>
                                     <constraint firstItem="E4u-aP-pYe" firstAttribute="leading" secondItem="zQ3-p4-119" secondAttribute="leading" constant="30" id="gPw-FD-5FW"/>
                                     <constraint firstAttribute="trailing" secondItem="E4u-aP-pYe" secondAttribute="trailing" constant="30" id="iCm-LE-qLY"/>
+                                    <constraint firstItem="fFR-Bz-GA4" firstAttribute="leading" secondItem="zQ3-p4-119" secondAttribute="leading" constant="30" id="iux-ur-5yc"/>
+                                    <constraint firstItem="fFR-Bz-GA4" firstAttribute="centerX" secondItem="zQ3-p4-119" secondAttribute="centerX" id="mbg-mo-gzq"/>
                                 </constraints>
                             </stackView>
                         </subviews>
@@ -121,11 +143,12 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="falseButton" destination="E4u-aP-pYe" id="Qvn-QG-tDb"/>
+                        <outlet property="firstButton" destination="Qba-Yi-wdh" id="HDj-ee-7At"/>
                         <outlet property="progressBarView" destination="s4v-C1-9do" id="zMg-Dk-8l8"/>
                         <outlet property="questionLabel" destination="HvH-uh-l14" id="AHa-Cp-w9L"/>
                         <outlet property="restartButton" destination="i50-VL-sVj" id="eHj-jQ-vbd"/>
-                        <outlet property="trueButton" destination="Qba-Yi-wdh" id="Oio-tV-qzU"/>
+                        <outlet property="secondButton" destination="fFR-Bz-GA4" id="P9F-bb-nC4"/>
+                        <outlet property="thirdButton" destination="E4u-aP-pYe" id="Fg1-GE-7Ft"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
