@@ -30,11 +30,7 @@ class ViewController: UIViewController {
     @IBAction func answerButtonPressed(_ sender: UIButton) {
         guard let answerStrValue = sender.titleLabel?.text else {return}
         
-        if quizBrain.checkAnswer(userAnswer: answerStrValue) && quizBrain.questionIndex < quizBrain.quiz.count {
-            sender.backgroundColor = UIColor.green
-        }else {
-            sender.backgroundColor = UIColor.red
-        }
+        sender.backgroundColor = quizBrain.checkAnswer(userAnswer: answerStrValue) && quizBrain.questionIndex < quizBrain.quiz.count ? UIColor.green : UIColor.red
         
         if quizBrain.questionIndex < quizBrain.quiz.count - 1 {
             quizBrain.incrementQuestionIndex()
@@ -50,6 +46,7 @@ class ViewController: UIViewController {
     @IBAction func restartPressed(_ sender: UIButton) {
         quizBrain.resetQuiz()
         updateUI(result: nil)
+        self.clearBackgroundColors()
         toggleButtonsVisibility(hidden: false)
     }
     
@@ -79,13 +76,16 @@ class ViewController: UIViewController {
                 
         // here we put a delay for updating UI
         timer = Timer.scheduledTimer(withTimeInterval: 0.2, repeats: false)  { (Timer) in
-            self.firstButton.backgroundColor = UIColor.clear
-            self.secondButton.backgroundColor = UIColor.clear
-            self.thirdButton.backgroundColor = UIColor.clear
+            self.clearBackgroundColors()
             Timer.invalidate()
         }
     }
     
+    func clearBackgroundColors() {
+        firstButton.backgroundColor = UIColor.clear
+        secondButton.backgroundColor = UIColor.clear
+        thirdButton.backgroundColor = UIColor.clear
+    }
     
     func toggleButtonsVisibility(hidden : Bool) {
         self.firstButton.isHidden = hidden
